@@ -8,7 +8,7 @@
 
 NAME=speex
 VERSION='1.2rc1'
-BUILD=1
+BUILD=2
 
 cd $TMP
 tar -zxvf $CWD/$NAME-$VERSION.tar.gz
