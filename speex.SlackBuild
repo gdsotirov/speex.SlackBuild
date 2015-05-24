@@ -17,13 +17,13 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 # 
-# $Id: speex.SlackBuild,v 1.5 2015/05/21 17:12:51 gsotirov Exp $
+# $Id: speex.SlackBuild,v 1.6 2015/05/24 13:55:07 gsotirov Exp $
 #
 
 . ../../slack-package.conf
 
 NAME=speex
-VERSION='1.2rc1'
+VERSION='1.2rc2'
 BUILD=${BUILD:-1}
 ARCH=${ARCH:-i486}
 
