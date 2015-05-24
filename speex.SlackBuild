@@ -17,7 +17,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 # 
-# $Id: speex.SlackBuild,v 1.7 2015/05/24 14:15:15 gsotirov Exp $
+# $Id: speex.SlackBuild,v 1.8 2015/05/24 14:18:08 gsotirov Exp $
 #
 
 . ../../slack-package.conf
@@ -69,8 +69,8 @@ CXXFLAGS=$SLKCFLAGS \
 #            --enable-ti-c55x # configure fails with error: No 16 bit type found on this platform!
 
 # Build & install
-make -j4 || exit 5
-make -e DESTDIR=$PKG install || exit 6
+make V=1 -j4 || exit 5
+make -e V=1 DESTDIR=$PKG install || exit 6
 
 # Prepare
 bin_perms $PKG
